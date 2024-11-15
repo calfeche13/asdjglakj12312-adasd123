@@ -14,6 +14,7 @@
                 </ds:X509Data>
             </ds:KeyInfo>
         </md:KeyDescriptor>
+        <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp-saml.ua3.int/simplesaml/saml2/idp/SSOService.php"/>
         <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
         <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:7001/saml/acs" index="0" isDefault="true"/>
     </md:SPSSODescriptor>
