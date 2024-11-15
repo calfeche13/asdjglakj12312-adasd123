@@ -15,6 +15,7 @@
             </ds:KeyInfo>
         </md:KeyDescriptor>
         <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:7001/saml/acs"/>
+        <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:7001/saml/acs"/>
         <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
         <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:7001/saml/acs" index="0" isDefault="true"/>
     </md:SPSSODescriptor>
